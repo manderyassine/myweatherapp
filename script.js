@@ -1,4 +1,4 @@
-const apiKey = "f93364d931340153e0a9868436906d42";
+const apiKey = "f93364d931340153e0d42";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
 
 // Get all the HTML elements we need to update
