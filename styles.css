@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 470px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    border-radius: 30px;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.search-box button {
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #ebfffc;
+    transition: 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #00feba;
+    color: white;
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.location h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.location p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.temp {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.weather-condition {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-condition img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.weather-condition p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.info-item i {
+    color: #00feba;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .temp {
+        font-size: 3rem;
+    }
+
+    .additional-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
